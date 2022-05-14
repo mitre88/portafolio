@@ -4,8 +4,8 @@ using portafolio.Models;
 
 namespace portafolio.Controllers;
 
-public class HomeController : Controller
-{
+public class HomeController : Controller  // Controller es una clase que se encarga de manejar las peticiones
+{                                                                // siempre se usa Controler despúes del nombre de la clase
     private readonly ILogger<HomeController> _logger;
 
     public HomeController(ILogger<HomeController> logger)
@@ -13,8 +13,8 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
-    {
+    public IActionResult Index()  // un controlador contiene 1 o más acciones 
+    {                                           // las acciones son los metodos que se van a ejecutar en respesta a las peticiones 
         return View();
     }
 
